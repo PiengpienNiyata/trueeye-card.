@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 mb-9 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 mb-6 gap-4">
       <div
         class=" py-2 px-4 border-8 border-white rounded-[8px] shadow-md bg-white flex flex-col justify-between text-base leading-6 font-normal">
         <div class="flex justify-between items-start">
@@ -74,42 +74,40 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 ">
       <div class="md:col-span-1">
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex flex-col sm:flex-row gap-4 items-stretch">
           <div class="relative flex-grow">
             <input type="text" placeholder="ค้นหา"
-              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-red-600" />
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-red-600 h-full" />
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                  d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.06.06l4.25 4.25a1.5 1.5 0 0 1-2.12 2.12l-4.25-4.25a6.47 6.47 0 0 1-4.23 1.56A6.5 6.5 0 0 1 3 9.5A6.5 6.5 0 0 1 9.5 5">
-                </path>
-              </svg>
+              <div class="w-4 h-4">
+                <img src="/src/assets/search.svg" alt="search Icon" />
+              </div>
             </div>
           </div>
+
           <div class="relative">
             <select
-              class="block appearance-none w-full bg-white border border-gray-300 text-gray-400 py-2 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white focus:border-red-600">
-              <option>สิทธิ์การใช้งาน</option>
+              class="block appearance-none w-full bg-white border border-gray-300 text-gray-400 py-2 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:bg-white focus:border-red-600 h-full">
+              <option disabled selected>สิทธิ์การใช้งาน</option>
               <option>Success</option>
               <option>Warning</option>
               <option>Error</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6z"></path>
               </svg>
             </div>
           </div>
-          <button
-            class="flex items-center justify-center bg-white border border-gray-300 text-gray-00 py-2 px-4 rounded-md focus:outline-none focus:ring-1 focus:ring-red-600">
-            <span class="mr-1">รีเซ็ต</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m5 13.59L15.59 17L12 13.41L8.41 17L7 15.59L10.59 12L7 8.41L8.41 7L12 10.59L15.59 7L17 8.41L13.41 12L17 15.59">
-              </path>
-            </svg>
+
+          <button class="flex items-center bg-white border border-gray-300 text-gray-400 py-2 px-4 rounded-md focus:outline-none focus:ring-1 focus:ring-red-600 h-full
+         justify-start">
+            <div class="w-3 h-3">
+              <img src="/src/assets/x.svg" alt="x Icon" />
+            </div>
+            <span class="ml-2">รีเซ็ต</span>
           </button>
         </div>
       </div>
